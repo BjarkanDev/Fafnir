@@ -1,0 +1,8 @@
+**Use Cases**
+
+*Background* 
+
+This document will contain all use cases to be utilized in the engineering of the general architecture and logic of Fafnir, largely based upon the ~user-requirements~ document. 
+
+*Use Cases*
+

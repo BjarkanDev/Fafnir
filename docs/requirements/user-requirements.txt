@@ -1,0 +1,50 @@
+**User Requirements**
+
+*Background*
+
+In order for Fafnir to become a reliable and profitable trading bot there is a need for the bot to attempt to ensure a net gain over a fiscal year, i.e a period of 12 months usually coinciding with interest capitalization. To obtain this effect a minimum amount of capital shall represent a so-called "cut-off" line of which the bot is no longer allowed to trade with. In other words there is a general desire to minimize loss as much as possible while profiting as much as possible, and this will theoretically be achieved by limiting the amount of money the software is given to "play" with, and if a certain amount of loss leads to there being slightly less than or equal to the "cut-off" amount of funding, the trading bot will cease its activities and wait for the funds to increase so it may continue. Thus all monetary risk will lie with the user as they will decide how much money they are willing to risk or "gamble" with. Fafnir nor its developer(s) claim any responsibility for loss sustained through its usage.
+
+Fafnir is, as of its infancy, not planned as a High Frequency Trading (HFT) automata, but rather an accumulative profit seeking automata, aiming to increase the size of a given capital pool by selling, buying or holding derivatives, straight stocks or other means. While speed in trades and profit distribution potential calculations is desirable, it is not an absolute requirement. The overarching goal is to provide a trading automata which provides all the Quality Of Life (QOL) aspects one would desire from a "hands off" trading experience, including tax calculations, monitoring etc., while generating a net profit which the user may utilize however they see fit. 
+
+*Wishes*
+
+There is a general wish for Fafnir to be as modularized as possible since the code base is prone to change as additional features are desired and implemented, calculations get improved and the general scale of the software architecture is bound to escalate beyond initial estimations. 
+
+Fafnir should provide feedback to the user with general progress, such as trades made during market hours, market estimations, news-to-market patterns etc. Be this via app, email, dedicated website or otherwise, notifications will provide the user with signs of life and let them make adjustments to parameters on the fly. 
+
+Fafnir should calculate taxable profits and provide a document or spreadsheet of some kind which provides the user with all the information required of them to fill out their tax declarations. 
+
+*Requirements*
+
+Fafnir must be easily deployable.
+
+Fafnir must be a self contained instance, i.e there cannot be multiple users on a singular Fafnir instance, there must be a singular running Fafnir process from which a user may access its parameters. 
+
+Fafnir must aim to generate a net profit over a fiscal year.
+
+Fafnir must aim to limit loss to a "cut-off" value, i.e if a user inputs a total of 100$ Fafnir can utilize, but a cut-off of 50$, Fafnir is not allowed to pull from this amount and must aim to not let losses extend into this cut-off. 
+
+Users should receive continous updates about Fafnir's progress.
+
+Fafnir should only aim to buy certain values if it passes some given profit distribution. 
+
+Fafnir should emply multiple strategies to best adhere to profit maximization, such as buy & hold, sell 50 keep 50, options or bonds etc.
+
+Decision strategies should be statistically optimal to be chosen for each specifc decision. 
+
+Fafnir should aim to be as fast as possible while not sacrificing QOL. 
+
+Fafnir should be as secure as possible to not allow financial or otherwise personal information to be leaked or exposed. 
+
+Fafnir should be able to handle immediate changes based on user input, such as canceling ongoing orders, sellings stocks or switching strategies. 
+
+Fafnir must be able to handle multiple brokerage platforms and abstract away specifics to allow for a user based uniform market overview and neutral decision making seat.
+
+Fafnir can interface with websites or provide a GUI interface to display statistics. 
+
+Fafnir could interface with an app to allow for mobile access to its running instance. 
+
+Fafnir should handle all clean-up in case of an immediate loss of function (power outage, internet outage, ...) as to minimize defective orders or unforeseen events. 
+
+  
+
